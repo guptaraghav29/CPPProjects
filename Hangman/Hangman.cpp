@@ -55,6 +55,7 @@ int main()
         return 0;
     }
 
+    int numberOfLines = 0;
     string word = "";
     vector<string> words;
     while (!inFS.eof())
@@ -62,9 +63,15 @@ int main()
         inFS >> word;
         inFS.ignore();
         words.push_back(word);
+        numberOfLines++;
     }
 
     inFS.close();
+
+    int randomNumber = rand() % numberOfLines;
+    string randomWord = words.at(randomNumber);
+
+    cout << randomWord << endl;
 
     return 0;
 }
