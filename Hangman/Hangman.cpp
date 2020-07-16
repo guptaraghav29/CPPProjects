@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <fstream>
 #include <vector>
+#include <ctime>
 #include <random>
 using namespace std;
 /*
@@ -30,10 +31,13 @@ int main()
 
     string topic;
     cin >> topic;
-    cout << topic << endl;
     string fileName = " ";
 
     ifstream inFS;
+
+    cout << endl;
+    cout << "Okay so you picked: " << topic << endl;
+    cout << endl;
 
     if (topic == "sports")
     {
@@ -61,10 +65,6 @@ int main()
     }
 
     inFS.close();
-
-    // int index = words.size();
-
-    // int chosenIndex = rand(index);
 
     return 0;
 }
