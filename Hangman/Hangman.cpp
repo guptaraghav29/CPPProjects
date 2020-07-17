@@ -21,8 +21,8 @@ int main()
     cin >> name;
     cout << "Nice to meet you " << name << "!" << endl;
     cout << endl;
-    cout << "This is a basic hangman game. A word will be generated that you have to guess."
-         << "You have 6 incorrect answer choices max to guess all the correct letters for the word" << endl;
+    cout << "This is a basic hangman game. A word will be generated that you have to guess." << endl
+         << "You have 6 incorrect answer choices max to guess all the correct letters of the word." << endl;
     cout << endl;
     cout << "Pick your topic: " << endl
          << "- sports" << endl
@@ -71,7 +71,11 @@ int main()
     int randomNumber = rand() % numberOfLines;
     string randomWord = words.at(randomNumber);
 
-    cout << randomWord << endl;
+    //cout << randomWord << endl;
+    cout << "Okay so the random word from that genre of " << topic << " has " << randomWord.length() << " letters." << endl;
+    cout << "You have 6 incorrect answer choices before you lose." << endl;
+
+    
 
     return 0;
 }
