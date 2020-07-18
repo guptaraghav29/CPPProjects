@@ -74,8 +74,26 @@ int main()
     //cout << randomWord << endl;
     cout << "Okay so the random word from that genre of " << topic << " has " << randomWord.length() << " letters." << endl;
     cout << "You have 6 incorrect answer choices before you lose." << endl;
-
     
-
+    int incorrectChoices;
+    string letterChoice;
+    
+    while (incorrectChoices < 6 && /* we need a condition for if the word fills up */) {
+        cout << "Please enter a letter" << endl;
+        cin >> letterChoice;
+        
+        for (unsigned i = 0; i < randomWord.size(); ++i) {
+            if (letterChoice == randomWord.at(i)) {
+                cout << "You have made a correct choice" << endl;
+                break;
+            }
+            
+            cout << "Sorry, you selected an invalid letter" << endl;
+            ++incorrectChoices;
+        }
+    }        
+    
+    //create extra arrays to keep track of choices and letters filled up?
+    
     return 0;
 }
