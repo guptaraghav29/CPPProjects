@@ -144,12 +144,14 @@ int main()
         cout << endl;
         cout << "Sorry you lost!" << endl;
         cout << "The correct word was " << randomWord << "!" << endl;
+        cout << endl;
     }
     else
     {
         cout << endl;
         cout << endl;
         cout << "Congrats, you guessed the correct word, which was " << randomWord << ", and WON!" << endl;
+        cout << endl;
     }
 
     return 0;
