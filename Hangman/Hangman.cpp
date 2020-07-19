@@ -88,7 +88,7 @@ int main()
     }
 
     cout << "Okay so the random word from that genre of " << topic << " has " << randomWord.length() << " letters." << endl;
-    cout << "You have 6 incorrect answer choices before you lose." << endl;
+    cout << "You have 7 incorrect answer choices before you lose." << endl;
 
     int incorrectChoices = 0;
     char letterChoice = ' ';
