@@ -106,7 +106,7 @@ int main()
     {
         cout << "Your word is this complete: " << newWord << endl;
         cout << endl;
-        cout << "You have " << 6 - incorrectChoices << " incorrect answer choices remaining." << endl;
+        cout << "You have " << (6 - incorrectChoices) + 1 << " incorrect answer choices remaining." << endl;
 
         cout << endl;
         cout << endl;
@@ -150,7 +150,7 @@ int main()
     {
         cout << endl;
         cout << endl;
-        cout << "Congrats, you guessed the correct word, which was " << randomWord << ", and WON!" << endl;
+        cout << "Congrats, you guessed the correct word, which was \"" << randomWord << "\", and WON!" << endl;
         cout << endl;
     }
 
