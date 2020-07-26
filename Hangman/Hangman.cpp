@@ -32,8 +32,9 @@ int main()
     cout << endl;
     cout << endl;
     cout << "Pick your topic: " << endl
-         << "- sports" << endl
-         << "- cs (computer science)" << endl;
+         << "- sports (sports related words)" << endl
+         << "- college (college related words)" << endl
+         << "- cs (computer science words)" << endl;
     cout << endl;
 
     string topic;
@@ -47,6 +48,10 @@ int main()
     if (topic == "sports")
     {
         fileName = "sports.txt";
+    }
+    else if (topic == "college")
+    {
+         fileName = "college.txt";
     }
     else if (topic == "cs")
     {
