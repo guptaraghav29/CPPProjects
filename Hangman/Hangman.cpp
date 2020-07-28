@@ -9,7 +9,7 @@
 using namespace std;
 /*
     Basic Concept: Computer picks random word, user tries to guess that word
-    Rules: 6 tries MAX (head, body, 2 arms, 2 legs)
+    Rules: 7 tries MAX
 */
 
 int main()
